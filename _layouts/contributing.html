@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include navbar.html %}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <ul class="nav nav-pills nav-stacked">
+                <li {% if page.page_menu_hl == "home" %} class="active" {% endif %}>
+                  <a href="/contributing/">General Information</a>
+                </li>
+                <li {% if page.page_menu_hl == "fork" %} class="active" {% endif %}>
+                  <a href="/contributing/fork.html"><strong>1. </strong> Fork</a>
+                </li>
+                <li {% if page.page_menu_hl == "write" %} class="active" {% endif %}>
+                  <a href="/contributing/write-introduction.html"><strong>2. </strong> Write</a>
+                </li>
+
+                <li style="margin-left:30px" {% if page.page_submenu_hl == "introduction" %} class="active" {% endif %}>
+                  <a href="/contributing/write-introduction.html"><strong>- </strong> Introduction</a>
+                </li>
+                <li style="margin-left:30px" {% if page.page_submenu_hl == "writing" %} class="active" {% endif %}>
+                  <a href="/contributing/write-write-and-preview.html"><strong>- </strong> Write and preview</a>
+                </li>
+                <li style="margin-left:30px" {% if page.page_submenu_hl == "formal" %} class="active" {% endif %}>
+                  <a href="/contributing/write-formal-requirements.html"><strong>- </strong> Formal requirements</a>
+                </li>
+                <li style="margin-left:30px" {% if page.page_submenu_hl == "technical" %} class="active" {% endif %}>
+                  <a href="/contributing/write-technical-requirements.html"><strong>- </strong> Technical requirements</a>
+                </li>
+                <li style="margin-left:30px" {% if page.page_submenu_hl == "hints" %} class="active" {% endif %}>
+                  <a href="/contributing/write-general-writing-hints.html"><strong>- </strong> General writing hints</a>
+                </li>
+
+
+                <li {% if page.page_menu_hl == "pull-request" %} class="active" {% endif %}>
+                  <a href="/contributing/pull-request.html"><strong>3. </strong> Pull-request</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
