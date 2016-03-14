@@ -15,7 +15,7 @@ You can make all changes using the web interface only. Please refer to the [GitH
 <hr>
 
 ## <span class="text-muted">Option 2: </span> Using local environment
-You can clone your forked *content* repository and use your favorite text editor to make changes.
+You can clone your forked [*content*](https://github.com/developer-portal/content) repository and use your favorite text editor to make changes.
 
 <hr>
 

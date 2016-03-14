@@ -40,7 +40,7 @@ section: contributing
 </div>
 
 ## Using issue tracker
-We use an issue tracker in the *content* repository to track the progress of content contribution. We use following labels on the issues to set a type of the task and track progress.
+We use an issue tracker in the [*content*](https://github.com/developer-portal/content) repository to track the progress of content contribution. We use following labels on the issues to set a type of the task and track progress.
 
 Each task regarding content contribution should contain one label from each column.
 
