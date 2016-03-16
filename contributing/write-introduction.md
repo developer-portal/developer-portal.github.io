@@ -7,10 +7,6 @@ section: contributing
 
 # **2.** Write
 
-We would like to provide useful information for people using Fedora as their workstation. We want to include Fedora-specific information like differences upstream packages and Fedora packages. Quickstarts and references to other resources are also great example.
-
-However, we do not want to duplicate any documentation, that already exists somewhere.
-
 <div class="row">
 
   <div class="col-md-3">
@@ -63,4 +59,4 @@ To reference a page in this repository, use the full path and replace `.md` exte
 e.g. to reference `/tech/tools/vagrant/vagrant-libvirt.md` write `[Vagrant with libvirt](/tech/tools/vagrant/vagrant-libvirt.html)`
 
 ## YAML Header
-All files need to start with a YAML header. Please read [Documentation / File Structure](/doc/file-structure.html) for more details.
+All files need to start with a special YAML header. Please read [Documentation / File Structure](/doc/file-structure.html) for more details.
