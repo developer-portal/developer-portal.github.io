@@ -64,24 +64,3 @@ e.g. to reference `/tech/tools/vagrant/vagrant-libvirt.md` write `[Vagrant with 
 
 ## YAML Header
 All files need to start with a YAML header. Please read [Documentation / File Structure](/doc/file-structure.html) for more details.
-
-### *Home Page* Example
-
-```
----
-name: Writing Web Applications
-subsection: web-app
-
-section: start-sw
-description: An overview of technologies that can be used to write a web application. Including PHP, Django, and Ruby on Rails.
----
-```
-
-### *Other Pages* Example
-
-```
----
-name: Writing Web Applications
-subsection: web-app
----
-```
