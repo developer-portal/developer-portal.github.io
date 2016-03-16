@@ -6,77 +6,51 @@ layout: documentation
 
 # Website Structure
 
-## Structure
+The portal is divided into **sections**. Each section contains **subsections**, and each subsection has several **pages**.
 
-<img src="/static/img/website-structure.png" width="600px">
+## Section
 
-### Sections
+**Examples:** Get Tools, Languages and Databases, ...
 
-<table class="table table-striped table-bordered table-main">
-  <tr>
-    <th> Section Name </th>
-    <th> Section IDs </th>
-  </tr>
-  <tr>
-    <td> Start a Project </td>
-    <td>
-      <ul class="list-unstyled">
-        <li>start-sw</li>
-        <li>start-hw</li>
-        <li>start-tips</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td> Get Tools </td>
-    <td>
-      <ul class="list-unstyled">
-        <li>tools</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td> Languages & Databases </td>
-    <td>
-      <ul class="list-unstyled">
-        <li>tech-languages</li>
-        <li>tech-database</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td> Deploy & Distribute </td>
-    <td>
-      <ul class="list-unstyled">
-        <li>deployment</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+<div class="row">
+  <div class="col-md-10">
+    <img src="/static/img/section.png" class="img-responsive img-thumbnail">
+  </div>
+</div>
 
-### Pages
-You can use any ID for your page - it should make sense and must not be used before. For example, a page about Docker could use ID *docker*, and a page about Creating Web Applications could use ID *web-app*.
+## Subsection
 
-## Example Usage
-Every file with content should start with a YAML header. There is a small difference in headers for the *home page* and *other pages*.
+**Examples:** Vagrant, Docker, Python, Ruby, ...
 
-### *Home Page* Example
+<div class="row">
+  <div class="col-md-10">
+
+    <img src="/static/img/subsection.png" class="img-responsive img-thumbnail">
+  </div>
+</div>
+
+## Page
+
+**Examples:** About Vagrant, Vagrant with libvirt provider, Vagrant with VirtualBox provider, ...
+
+Pages contain the actual content. Contributors only need to create and edit pages. Pages are represented by **Markdown files** with special **YAML header**, which defines section, subsection, and information used in title - name and description.
+
+### Example page file
 
 ```
 ---
-name: Writing Web Applications
-page: web-app
+name: Docker in Fedora
+subsection: docker
 
-section: start-sw
-description: An overview of technologies that can be used to write a web application. Including PHP, Django, and Ruby on Rails.
+section: tools
+description: Platform for distributed applications.
 ---
+
+# Docker
+Docker is a platform for developers and sysadmins to develop, ship, and run applications ...
+
+## Getting Started with Docker
+To install and run Docker ...
 ```
 
-### *Other Pages* Example
-
-```
----
-name: Writing Web Applications
-page: web-app
----
-```
+*More information about files is in the [File Structure](/doc/file-structure.html) section.*
