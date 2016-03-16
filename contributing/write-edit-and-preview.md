@@ -1,11 +1,11 @@
 ---
 layout: contributing
 page_menu_hl: write
-page_submenu_hl: writing
+page_submenu_hl: edit
 section: contributing
 ---
 
-# Write and preview
+# Edit and preview
 
 <div class="row">
 
