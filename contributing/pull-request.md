@@ -4,7 +4,7 @@ page_menu_hl: pull-request
 section: contributing
 ---
 
-# Pull request
+# **3.** Pull request
 
 When you have done your work, you can ask us to pull your changes from your copy of the [*content*](https://github.com/developer-portal/content) repository. This is done by using a pull-request function.
 

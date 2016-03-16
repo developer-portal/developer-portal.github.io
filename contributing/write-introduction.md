@@ -5,19 +5,14 @@ page_submenu_hl: introduction
 section: contributing
 ---
 
-# Introduction
+# **2.** Write
 
-## What to write
+We would like to provide useful information for people using Fedora as their workstation. We want to include Fedora-specific information like differences upstream packages and Fedora packages. Quickstarts and references to other resources are also great example.
+
+However, we do not want to duplicate any documentation, that already exists somewhere.
 
 <div class="row">
-  <div class="col-md-3">
-    <div class="panel panel-success">
-      <div class="panel-body">
-        <span class="glyphicon glyphicon-ok" style="color:green;font-size:30px"></span>
-        <h4>Reference </h4>
-      </div>
-    </div>
-  </div>
+
   <div class="col-md-3">
     <div class="panel panel-success">
       <div class="panel-body">
@@ -35,6 +30,14 @@ section: contributing
     </div>
   </div>
   <div class="col-md-3">
+    <div class="panel panel-success">
+      <div class="panel-body">
+        <span class="glyphicon glyphicon-ok" style="color:green;font-size:30px"></span>
+        <h4>Reference </h4>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
     <div class="panel panel-danger">
       <div class="panel-body">
         <span class="glyphicon glyphicon-remove" style="color:#c00;font-size:30px"></span>
@@ -43,3 +46,42 @@ section: contributing
     </div>
   </div>
 </div>
+
+## Style and Formatting
+
+* Please use `$ sudo ...` for commands requiring root password or root user.
+* Use the names of upstream project and files properly - e.g. `Makefile` will have capital M.
+* Referencing commands and names of binaries that would be ran in command line should be done using back-ticks ``.
+* Add empty lines before and after headlines and code blocks.
+* Format headlines as normal sentences e.g. About my program called Program, *not* About My Program Called Program
+* Take a look at [Github markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+### Internal Links
+
+To reference a page in this repository, use the full path and replace `.md` extension to `.html`:
+
+e.g. to reference `/tech/tools/vagrant/vagrant-libvirt.md` write `[Vagrant with libvirt](/tech/tools/vagrant/vagrant-libvirt.html)`
+
+## YAML Header
+All files need to start with a YAML header. Please read [Documentation / File Structure](/doc/file-structure.html) for more details.
+
+### *Home Page* Example
+
+```
+---
+name: Writing Web Applications
+subsection: web-app
+
+section: start-sw
+description: An overview of technologies that can be used to write a web application. Including PHP, Django, and Ruby on Rails.
+---
+```
+
+### *Other Pages* Example
+
+```
+---
+name: Writing Web Applications
+subsection: web-app
+---
+```
