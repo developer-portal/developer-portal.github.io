@@ -8,7 +8,7 @@ layout: documentation
 
 *You might want to see the [Website Structure](/doc/structure.html) section before reading this.*
 
-Each file starts with a special **YAML header**, which defines information like section, subsection, name, or description.
+Each file starts with a special **YAML header**, which defines information like section, subsection, title, or description.
 The actual content is written in **Markdown**.
 
 ## YAML header
@@ -20,7 +20,7 @@ You need to set some variables in each file to make it work with the portal.
 
 ```
 ---
-name: Writing Web Applications
+title: Writing Web Applications
 subsection: web-app
 
 section: start-sw
@@ -35,7 +35,7 @@ Lorem ipsum dolor sit amet...
 
 ```
 ---
-name: Writing Web Applications
+title: Writing Web Applications
 subsection: web-app
 ---
 
@@ -44,13 +44,13 @@ Lorem ipsum dolor sit amet...
 ```
 
 ### Variables
-* **name** (all pages) - Name of the page displayed in menu.
+* **title** (all pages) - Name of the page displayed in menu.
 * **subsection** (all pages) - ID of subsection. Setting this will:
   * add the page to the '*list of pages*' menu.
 * **section** (main page only) - ID of section. Setting this will:
   * add the page to the '*list of subsections*' menu,
   * mark this page as the main page of your subsection,
-  * display the *name* and *description* of this file in the '*subsection header*'.
+  * display the *title* and *description* of this file in the '*subsection header*'.
 * **description** (main page only) - Description of the subsection.
 * **order** (optional) - A number, used to sort links in the '*list of pages*' menu.
 
