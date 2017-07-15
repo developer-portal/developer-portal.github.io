@@ -14,7 +14,7 @@ Don't use complicated sentences. Not everyone reading the documentation will be 
 
 ### Simple from technical standpoint
 
-Keep the doc simple from a '''technical standpoint''' too. Not everyone reading the documentation will be an experienced admin/user.
+Keep the doc simple from a **technical standpoint** too. Not everyone reading the documentation will be an experienced admin/user.
 
 ## Avoid shorthands
 
@@ -22,15 +22,11 @@ They're just too informal.
 
 ### Bad example:
 
-```
-The update won't be available...
-```
+> The update won't be available...
 
 ### Good example:
 
-```
-The update will not be available...
-```
+> The update will not be available...
 
 ## Be direct
 
@@ -38,15 +34,11 @@ Avoid passive voice.
 
 ### Bad example:
 
-```
-This can be fixed by...
-```
+> This can be fixed by...
 
 ### Good example:
 
-```
-You can fix this issue by...
-```
+> You can fix this issue by...
 
 ## Tell the user what is going on
 
@@ -54,23 +46,26 @@ When you tell users to run a set of commands, tell them what is going on. This m
 
 ### Bad example:
 
-```
-$ sudo systemctl disable firewalld
-$ sudo systemctl stop firewalld
-$ sudo cp PREUPGRADE_DIR/cleanconf/etc/sysconfig/iptables /etc/sysconfig/iptables
-etc.
-```
+> ```
+> $ sudo systemctl disable firewalld
+> $ sudo systemctl stop firewalld
+> $ sudo cp PREUPGRADE_DIR/cleanconf/etc/sysconfig/iptables /etc/sysconfig/iptables
+> ```
+> etc.
 
 ### Good example:
 
-```
-First, disable and stop the firewalld service:\n
-$ sudo systemctl disable firewalld
-$ sudo systemctl stop firewalld
-Then, copy the cleanconf/etc/sysconfig/iptables configuration file into your system's /etc/sysconfig/ directory:
-$ sudo cp PREUPGRADE_DIR/cleanconf/etc/sysconfig/iptables /etc/sysconfig/iptables
-etc.
-```
+> First, disable and stop the firewalld service:
+> ```
+> $ sudo systemctl disable firewalld
+> $ sudo systemctl stop firewalld
+> ```
+> Then, copy the `cleanconf/etc/sysconfig/iptables` configuration file into your system's `/etc/sysconfig/` directory:
+> ```
+> $ sudo cp PREUPGRADE_DIR/cleanconf/etc/sysconfig/iptables /etc/sysconfig/iptables
+> ```
+> etc.
+
 
 If this makes the particular documentation too long, you could create a separate page about it and provide a link to the user instead.
 
@@ -80,15 +75,11 @@ If we say things like "this should be in...", it makes us sound like we don't ev
 
 ### Bad example:
 
-```
-You should be able to find this list in /etc/whatever/list.
-```
+> You should be able to find this list in `/etc/whatever/list`.
 
 ### Good example:
 
-```
-The list is located in /etc/whatever/list.
-```
+> The list is located in `/etc/whatever/list`.
 
 ## How to document an issue in more versions
 
