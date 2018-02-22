@@ -104,6 +104,3 @@ Lorem ipsum dolor sit amet...
 
 #### Subsections IDs
 You can use any ID for your subsection - it should make sense and must not be used before. For example, a subsection about Docker could use ID *docker*, and a subsection about Creating Web Applications could use ID *web-app*.
-
-## Markdown
-Learn more about markdown in this [Mastering Markdown guide](https://guides.github.com/features/mastering-markdown/).
